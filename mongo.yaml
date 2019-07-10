@@ -1,8 +1,12 @@
-version: "3"
+version: '3'
 services:
   mongo:
-    image: mongo
+    image: mongo:3.0.2
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - '5000:5000'
+    volumes:
+      - './mongo:/data/db'
