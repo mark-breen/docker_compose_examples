@@ -1,6 +1,7 @@
 rabbitmq:
   image: "rabbitmq:management"
   hostname: "rabbitmq"
+  container_name: "rabbitmq"
   environment:
     RABBITMQ_DEFAULT_USER: "rabbitmq"
     RABBITMQ_DEFAULT_PASS: "rabbitmq"
